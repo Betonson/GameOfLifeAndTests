@@ -7,15 +7,17 @@ namespace GameOfLifeAndTests
 	public class GridManager : MonoBehaviour
 	{
 		[SerializeField] private int _width, _height;
-		[SerializeField] private TileManager _tilePrefab;
+		[SerializeField] private Tile _tilePrefab;
         [SerializeField] private Transform _mainCamera;
+        private Tile[,] _TileCollection;
 
         private void Start()
         {
-            GenerateGrid();
+            _TileCollection = new Tile[_width,_height];
+            GenerateGrid(_TileCollection);
         }
 
-        void GenerateGrid()
+        void GenerateGrid(Tile[,] _TileCollection)
         {
 			for (int x = 0; x < _width; x++)
             {
@@ -23,6 +25,7 @@ namespace GameOfLifeAndTests
                 {
 					var spawnedTile = Instantiate(_tilePrefab, new Vector3(x, y), Quaternion.identity);
 					spawnedTile.name = $"Tile {x} {y}";
+                    _TileCollection[x,y] = spawnedTile;
                 }
             }
 
