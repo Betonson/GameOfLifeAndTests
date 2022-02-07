@@ -50,6 +50,9 @@
      <Compile Include="Assets\Code\Tile.cs" />
      <Compile Include="Assets\Code\UpdatableObject.cs" />
      <Compile Include="Assets\Code\ListUpdatableObject.cs" />
+     <Compile Include="Assets\Code\TileBaseState.cs" />
+     <Compile Include="Assets\Code\TileAliveState.cs" />
+     <Compile Include="Assets\Code\TileDeadState.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Program files\Unity\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

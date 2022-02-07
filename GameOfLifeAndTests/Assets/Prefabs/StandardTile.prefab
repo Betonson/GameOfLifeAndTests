@@ -182,6 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _highlight: {fileID: 5779005533676189740}
+  aliveColor: {r: 0, g: 1, b: 0.3921569, a: 1}
+  deadColor: {r: 0.007843138, g: 0.25490198, b: 0.06666667, a: 1}
 --- !u!65 &-9121536915326391807
 BoxCollider:
   m_ObjectHideFlags: 0
