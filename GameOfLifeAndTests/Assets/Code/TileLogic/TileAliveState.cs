@@ -6,8 +6,7 @@ namespace GameOfLifeAndTests
 	{
         public override void OnEnterState(Tile tile)
         {
-            Debug.Log("Changing in progress");
-            tile.GetComponent<SpriteRenderer>().color = tile.aliveColor;
+            tile.GetComponent<SpriteRenderer>().material = tile.aliveMaterial;
             tile.nextState = tile.deadState;
         }
 
