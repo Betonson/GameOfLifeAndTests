@@ -67,6 +67,7 @@
      <Compile Include="Assets\Code\TileLogic\TileBaseState.cs" />
      <Compile Include="Assets\Code\TileLogic\TileAliveState.cs" />
      <Compile Include="Assets\Code\UpdatableObject.cs" />
+     <Compile Include="Assets\Code\TileLogic\TileStateMachine.cs" />
      <Compile Include="Assets\Code\ListUpdatableObject.cs" />
      <Compile Include="Assets\Code\TileLogic\TileDeadState.cs" />
  <Reference Include="UnityEngine">

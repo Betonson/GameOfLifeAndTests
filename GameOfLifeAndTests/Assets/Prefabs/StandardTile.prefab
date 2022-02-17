@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 679284040903337010}
   - component: {fileID: 8602845472624054217}
   - component: {fileID: -9121536915326391807}
+  - component: {fileID: 3620667814770043292}
   m_Layer: 0
   m_Name: StandardTile
   m_TagString: Untagged
@@ -181,9 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf45f61c5eb22842b4204a9000b3d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _highlight: {fileID: 5779005533676189740}
-  aliveColor: {r: 0, g: 1, b: 0.3921569, a: 1}
-  deadColor: {r: 0.007843138, g: 0.25490198, b: 0.06666667, a: 1}
+  tileStateMachine: {fileID: 0}
 --- !u!65 &-9121536915326391807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -197,3 +196,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3620667814770043292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038243792326134138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2905a0f9b8a9ca64d98fe84ebd6d1597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliveMaterial: {fileID: 0}
+  deadMaterial: {fileID: 0}

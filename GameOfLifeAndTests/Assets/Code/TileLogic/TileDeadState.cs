@@ -4,13 +4,13 @@ namespace GameOfLifeAndTests
 {
 	public class TileDeadState : TileBaseState
 	{
-        public override void OnEnterState(Tile tile)
+        public override void OnEnterState(TileStateMachine tileStateMachine)
         {
-            tile.GetComponent<SpriteRenderer>().material = tile.deadMaterial;
-            tile.nextState = tile.aliveState;
+            tileStateMachine.GetComponent<SpriteRenderer>().material = tileStateMachine.deadMaterial;
+            tileStateMachine.nextState = tileStateMachine.aliveState;
         }
 
-        public override void OnExitState(Tile tile)
+        public override void OnExitState(TileStateMachine tileStateMachine)
         {
             
         }

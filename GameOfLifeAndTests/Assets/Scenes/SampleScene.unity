@@ -437,7 +437,8 @@ MonoBehaviour:
   _tilePrefab: {fileID: 8602845472624054217, guid: 5fd4ad7b1213e684b8b32d89e3d3cd77,
     type: 3}
   _mainCamera: {fileID: 519420032}
-  _survivalCurve: 
+  _survivalCurve: 000111000
+  gameOfLifeRunning: 0
 --- !u!4 &1649561853
 Transform:
   m_ObjectHideFlags: 0

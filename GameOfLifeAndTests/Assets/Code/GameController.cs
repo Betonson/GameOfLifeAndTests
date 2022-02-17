@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +10,17 @@ namespace GameOfLifeAndTests
         public delegate void OnStartButtonPressed();
 
         public event OnStartButtonPressed StartButtonPressed;
-        public void Awake()
-        {
+        private GridManager _gridManager;
 
+        private void Awake()
+        {
+            _gridManager = FindObjectOfType<GridManager>();
+        }
+
+        private void Start()
+        {   
+            _gridManager.GenerateGrid();
+            _gridManager.FillNeighbours();
         }
 
         public void Update()
